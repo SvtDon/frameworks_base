@@ -19,14 +19,14 @@ import android.os.SystemProperties;
 
 public class BuildInfo {
 
-    private static final String BUILD_TYPE_PROP = "ro.slim.buildtype";
-    private static final String SLIM_VERSION_PROP = "ro.slim.version";
+    private static final String BUILD_TYPE_PROP = "ro.evolution.buildtype";
+    private static final String Evolution_VERSION_PROP = "ro.evolution.version";
 
-    public static String getSlimBuildType() {
+    public static String getEvolutionBuildType() {
         return SystemProperties.get(BUILD_TYPE_PROP, "");
     }
 
-    public static String getSlimVersion() {
-        return SystemProperties.get(SLIM_VERSION_PROP, "");
+    public static String getEvolutionVersion() {
+        return SystemProperties.get(Evolution_VERSION_PROP, "");
     }
 }
